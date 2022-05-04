@@ -8,25 +8,37 @@
     <title>Cat Random</title>
 </head>
 <body>
-    <div class="container-card">
+    <section class="container">
+        <span id="error"></span>
         <div class="title">
-            <h1>Gatitos aleatorios</h1>
+            <h1>Gatitos App</h1>
+            <button onclick="loadRandomImg()">Refresh</button>
         </div>
-        <div class="button">
-            <button onclick="reload()">Refresh</button>
-        </div>
-        <div class="container-card-cards">
-            <div class="card">
-                <img id="img1" src="" alt="fotos de gatos aleatorios">
+    </section>    
+        <section id="randomMichis" class="container-card">
+            <div class="title">
+                <h2>Gatitos Aleatorios</h2>
             </div>
-            <div class="card">
-                <img id="img2" src="" alt="fotos de gatos aleatorios">
+            <div class="cards">
+                <article>
+                    <img id="img1" alt="fotos de gatos aleatorios">
+                    <button id="btn1">Like!</button>
+                </article>
+                <article>
+                    <img id="img2" alt="fotos de gatos aleatorios">
+                    <button id="btn2">Like!</button>
+                </article>
             </div>
-            <div class="card">
-                <img id="img3" src="" alt="fotos de gatos aleatorios">
+        </section>
+        <section id="michisFavorite">
+            <div class="title">
+                <h2>Gatitos Favoritos</h2>
             </div>
-        </div>
-    </div>
+            <div id="favCard">
+
+            </div>
+        </section>
+    
 
     <script src="./index.js"></script>
 </body>

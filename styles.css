@@ -2,16 +2,86 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background: rgb(239, 197, 155);
+    background-color: rgb(255, 238, 238);
+}
+
+.container {
+    display: grid; 
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    padding-bottom: 5px;
+}
+
+.title {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
 }
 
 .container-card {
-    height: 100px;
-    width: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background: rgb(255, 189, 90);
+    margin-top: 5px;
+    padding-bottom: 20px;
+    border-radius: 5px;
 }
 
-.container-card-cards {
+.cards {
     display: flex;
-    align-content: center;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.cards article {    
+    display: flex;
+    border: 1px solid gray;
+    border-radius: 5px;
+
+} 
+.cards article img {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px 0 0 5px;
+    
+}
+.cards article button {
+    border: none;
+    border-radius: 0 5px 5px 0;
+}
+
+
+#michisFavorite {
+    margin-left: 50px;
+    margin-right: 50px;
+    background: rgb(255, 189, 90);
+    margin-top: 5px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+}
+
+#michisFavorite div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#michisFavorite div article {
+    display: flex;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+#michisFavorite div article img {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px 0 0 5px;
+}
+
+#michisFavorite div article button {
+    border: none;
+    border-radius: 0 5px 5px 0;
 }
